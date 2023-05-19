@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title> Accueil </title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body background="../images/font-star-wars.jpg">
+        <header>
+            <nav class="barre">
+                <ul class="menu">
+                    <li><a class="active" href="#Accueil"> <img id="logo" src="../images/logo.png" alt="Logo"> </a></li>
+                    <li><a href="jedi.html"> Jedi </a></li>
+                    <li><a href="sith.html"> sith </a></li>
+                    <li><a href="apropos.html"> a propos </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1> Accueil </h1>
+            <img class="underline" src="../images/purple-lightsaber.png" alt="Sabre laser violet">
+
+            <h1 id="quiz"> quiz </h1>
+            <form name="quiz" action="#" class="box" onsubmit="return false">
+                <strong>Quelle est la véritable identité de Dark Vador ?</strong>
+                <p class="qcm">
+                    <input type="radio" name="Vador" value="0" onclick="score += 1"> Anakin Skywalker
+                    <input type="radio" name="Vador" value="1"> Jar Jar Binks
+                    <input type="radio" name="Vador" value="2"> Obi-wan Kenobi
+                    <input type="radio" name="Vador" value="3"> George Lucas
+                </p>
+                <strong>Qui a tué Maitre Windu ?</strong>
+                <p class="qcm">
+                    <input type="radio" name="Windu" value="0"> Dark Vador
+                    <input type="radio" name="Windu" value="1"> Anakin Skywalker
+                    <input type="radio" name="Windu" value="2" onclick="score += 1"> Dark Sidious
+                    <input type="radio" name="Windu" value="3"> Maitre Yoda
+                </p>
+                <strong>De quelle planète vient Anakin Skywalker ?</strong>
+                <p class="qcm">
+                    <input type="radio" name="Anakin" value="0"> Coruscant
+                    <input type="radio" name="Anakin" value="1"> Naboo
+                    <input type="radio" name="Anakin" value="2"> Kamino
+                    <input type="radio" name="Anakin" value="3" onclick="score += 1"> Tatooine
+                </p>
+                <strong>Qui est le créateur de la saga Star Wars ?</strong>
+                <p class="qcm">
+                    <input type="radio" name="SW" value="0"> Steven Spielberg
+                    <input type="radio" name="SW" value="1"> Jar Jar Binks
+                    <input type="radio" name="SW" value="2" onclick="score += 1"> George Lucas
+                    <input type="radio" name="SW" value="3"> John Williams
+                </p>
+                <strong>Le compte Dooku est-il un Sith ou un Jedi à la base ?</strong>
+                <p class="qcm">
+                    <input type="radio" name="Windu" value="0" onclick="score += 1"> Un Jedi
+                    <input type="radio" name="Windu" value="1"> Aucun des deux
+                    <input type="radio" name="Windu" value="2"> Un Sith
+                    <input type="radio" name="Windu" value="3"> Les deux
+                </p>
+                <strong>Qui est le père de Luke Skywalker ?</strong>
+                <p class="qcm">
+                    <input type="radio" name="Windu" value="0"> Obi-wan Kenobi
+                    <input type="radio" name="Windu" value="1" onclick="score += 1"> Dark Vador
+                    <input type="radio" name="Windu" value="2"> Han Solo
+                    <input type="radio" name="Windu" value="3"> Dark Sidious
+                </p>
+                <strong>Qui a lancé l'ordre 66 ?</strong>
+                <p class="qcm">
+                    <input type="radio" name="Windu" value="0"> Anakin Skywalker
+                    <input type="radio" name="Windu" value="1"> Le conseil Jedi
+                    <input type="radio" name="Windu" value="2" onclick="score += 1"> Palpatine
+                    <input type="radio" name="Windu" value="3"> Maitre Yoda
+                </p>
+                <strong>Qui est la mère de Luke ?</strong>
+                <p class="qcm">
+                    <input type="radio" name="Windu" value="0"> Leïla Organa
+                    <input type="radio" name="Windu" value="1"> Ahsoka Tano
+                    <input type="radio" name="Windu" value="2"> Rey Skywalker
+                    <input type="radio" name="Windu" value="3" onclick="score += 1"> Padme Amidala
+                </p>
+                <strong>Qu'est ce que l'Etoile de la Mort ?</strong>
+                <p class="qcm">
+                    <input type="radio" name="Windu" value="0"> Une planète
+                    <input type="radio" name="Windu" value="1" onclick="score += 1"> Une base
+                    <input type="radio" name="Windu" value="2"> Une lune
+                    <input type="radio" name="Windu" value="3"> Un diamant
+                </p>
+                <br>
+                <input type="text" name="name" placeholder = "Pseudo" required>
+                <button type="submit" class="btn" onclick="ajouter()"> Enregistrer </button>
+            </form>
+
+            <div class="box">	
+                <table class="scoreboard">
+                    <thead>
+                        <tr>
+                            <th>Pseudo</th>
+                            <th>Score</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <nav class="barre">
+                <ul class="menu footer">
+                    <li><a href="apropos.html"> qui sommes-nous </a></li>
+                    <li><a href="#faq"> foire aux questions </a></li>
+                    <li><a href="apropos.html"> Contactez-nous </a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
